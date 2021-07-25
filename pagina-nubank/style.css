@@ -1,0 +1,127 @@
+:root {
+    --clr-primary: #820AD1;
+    --clr-input: #EF5648;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+body {
+
+    background-color: var(--clr-primary);
+
+}
+
+main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 54px);
+    padding: 1rem 0.8rem 0 0.8rem;
+}
+
+svg {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    max-height: 5rem;
+    max-width: 5rem;
+}
+
+.card-wrapper {
+    background: #fff;
+    width: 28.5rem;
+    height: 36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.card {
+    width: 100%;
+    padding: 1rem 4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    padding: 2.4rem 0 0 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.846;
+    width: 100%;
+}
+
+label {
+    color: var(--clr-input);
+    font-size: 0.8rem;
+}
+
+.card input {
+    border: none;
+    border-bottom: 1px dotted;
+    border-color: var(--clr-input);
+    width: 100%;
+    font-size: 14pt;
+}
+
+input:focus {
+    outline: none;
+
+
+}
+
+label {
+    display: flex;
+
+}
+
+.cpf {
+    margin-bottom: 1rem;
+}
+
+button {
+    margin-top: 2.5rem;
+    color: #CACACA;
+    background: #ffffff00;
+    border: 1px solid #CACACA;
+    border-radius: 0.25rem;
+    padding: 1rem 2rem 1.1rem;
+    text-transform: uppercase;
+}
+
+aside {
+    margin-top: 3rem;
+    font-size: 0.75rem;
+    color: var(--clr-primary);
+    font-weight: bold;
+}
+
+.second-p {
+    margin-top: 0.8rem;
+}
+
+.fas {
+    margin-left: 0.2rem;
+    font-size: 0.5rem;
+}
+
+@media screen and (min-width:300px) and (max-width:768px) {
+
+    svg {
+        visibility: hidden;
+    }
+}
